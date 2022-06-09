@@ -40,9 +40,25 @@
         margin: 40px;
 
         /* CSS GRID */
+        display: grid;
+        /*  grid-template-columns: 3fr 1fr 1fr auto;
+        grid-template-rows: 300px 200px ; */
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+        /*gap: 30px;*/
+        column-gap: 20px;
+        row-gap: 40px;
       }
-
+      .el--8 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+      }
+      .el--2 {
+        grid-column: 1 / span 2;
+        grid-row: 2/3;
+      }
       .container--2 {
+        display: none;
         /* STARTER */
         font-family: sans-serif;
         background-color: black;
@@ -50,9 +66,9 @@
         margin: 100px;
 
         width: 1000px;
-        height: 600px;
+        /* height: 600px;*/
 
-        /* CSS GRID s*/
+        /* CSS GRID */
       }
     </style>
   </head>
@@ -64,7 +80,7 @@
       <div class="el el--4">(4) are</div>
       <div class="el el--5">(5) amazing</div>
       <div class="el el--6">(6) languages</div>
-      <div class="el el--7">(7) to</div>
+      <!-- <div class="el el--7">(7) to</div> -->
       <div class="el el--8">(8) learn</div>
     </div>
 
