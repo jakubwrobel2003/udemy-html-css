@@ -36,9 +36,9 @@ nav {
   /* text-align: center; */
 }
 
-article {
-  /* margin-bottom: 60px; */
-}
+/* article {
+  margin-bottom: 60px; 
+} */
 
 .post-header {
   margin-bottom: 40px;
@@ -354,11 +354,11 @@ flex-grow: 0;
   grid-column: 1 /-1;
 }
 
-article {
+/* article {
 }
 
 aside {
-}
+} */
 
 footer {
   background-color: #1098ad;
