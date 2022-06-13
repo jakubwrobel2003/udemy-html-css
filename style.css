@@ -27,7 +27,9 @@ body {
   padding-left: 40px;
   padding-right: 40px; */
   padding: 20px 40px;
+
   /* margin-bottom: 60px; */
+
   /* height: 80px; */
 }
 
@@ -36,9 +38,11 @@ nav {
   /* text-align: center; */
 }
 
+
 /* article {
   margin-bottom: 60px; 
 } */
+
 
 .post-header {
   margin-bottom: 40px;
@@ -325,6 +329,7 @@ footer {
 }
 /* Flexbox layout */
 /* .row {
+
   align-items: flex-start;
   display: flex;
   gap: 75px;
@@ -334,6 +339,7 @@ article {
   flex: 0 0 825px;
 }
 aside {
+
 flex-grow: 0;
         flex-shrink: 1;
         flex-basis: auto;
@@ -363,4 +369,5 @@ aside {
 footer {
   background-color: #1098ad;
   grid-column: 1/-1;
+
 }
