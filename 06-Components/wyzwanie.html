@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>accordian component</title>
+    <style>
+      /*
+            SPACING SYSTEM (px)
+            2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+            FONT SIZE SYSTEM (px)
+            10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+            */
+      /* main colors  #087f5b
+            gray color #343a40
+            */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        color: #343a40;
+        display: flex;
+        justify-content: center;
+      }
+      .pagination {
+        width: auto;
+        gap: 24px;
+        margin-top: 100px;
+        position: relative;
+        padding: 16px;
+        display: flex;
+        justify-content: center;
+      }
+      .icon {
+        width: 40px;
+        height: 40px;
+        stroke: #087f5b;
+        border: 1px solid #087f5b;
+        border-radius: 50%;
+        position: absolute;
+      }
+      .icon--left {
+        left: -16px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .icon--right {
+        right: -16px;
+        top: 50%;
+        transform: translate(50%, -50%);
+      }
+
+      button {
+        color: #343a40;
+        font-size: 18px;
+        font-weight: 500;
+        /* border: 1px solid #087f5b; */
+        border: none;
+        border-radius: 50%;
+        background-color: #fff;
+        width: 32px;
+        height: 32px;
+        align-self: center;
+      }
+      .opened {
+        background-color: #087f5b;
+        color: #fff;
+      }
+      button:hover {
+        cursor: pointer;
+        background-color: #087f5b;
+        color: #fff;
+      }
+      .icon:hover {
+        cursor: pointer;
+        background-color: #087f5b;
+        stroke: #fff;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="pagination">
+      <button>1</button>
+      <button>2</button>
+      <button class="opened">3</button>
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button>...</button>
+      <button>23</button>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="icon icon--left"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M15 19l-7-7 7-7"
+        />
+      </svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="icon icon--right"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+      </svg>
+    </div>
+  </body>
+</html>
